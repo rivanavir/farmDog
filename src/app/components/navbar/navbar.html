@@ -1,0 +1,25 @@
+<md-toolbar layout="row" layout-align="center center">
+
+  <section flex layout="row" layout-align="end center">
+    <md-button href="#" class="md-primary">Spray applications</md-button>
+    <md-button href="#" class="md-primary">Reports</md-button>
+    <!-- <md-button href="#" class="md-primary">Michel <i class="md-icon dp48">keyboard_arrow_down</i></md-button> -->
+    <md-menu md-position-mode="target-right target" >
+      <md-button aria-label="Open demo menu" class="" ng-click="$mdOpenMenu($event)">
+        Michael
+        <md-icon class="material-icons">keyboard_arrow_down</md-icon>
+      </md-button>
+      <md-menu-content width="4" >
+        <md-menu-item ng-repeat="item in [1, 2, 3]">
+          <md-button ng-click="ctrl.announceClick($index)">
+              <div layout="row" flex>
+                <p flex>Option {{item}}</p>
+              </div>
+          </md-button>
+        </md-menu-item>
+      </md-menu-content>
+    </md-menu>
+  </section>
+
+
+</md-toolbar>
