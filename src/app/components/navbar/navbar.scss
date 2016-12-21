@@ -4,6 +4,12 @@ md-content{
 .acme-navbar-text{
   color: white;
 }
+md-toolbar{
+  min-height: 40px;
+  &:not(.md-menu-toolbar) {
+    background-color: #242423;
+  }
+}
 
 a {
   color: black;
@@ -17,4 +23,44 @@ h1 {
 
 a:hover, a:focus {
   color: greenyellow;
+}
+
+.logo-wrap{
+  a.logo{
+    padding-left: 30px;
+    line-height: 30px;
+    display: inline-block;
+    padding-top: 6px;
+    img{
+      width: 105px;
+
+    }
+  }
+}
+
+
+.head-nav{
+  .md-primary{
+  }
+  .md-button{
+    font-size: 12px;
+    font-family: 'Roboto';
+    text-transform: uppercase;
+    line-height: 30px;
+    min-height:30px;
+    margin: 5px 8px;
+    min-width:0;
+    padding: 0 20px;
+  }
+  .md-menu{
+    margin: 0;
+    button.md-button{
+      // margin-right: 20px;
+      span{
+        text-transform: capitalize;
+        font-size: 16px;
+        font-weight: 300;
+      }
+    }
+  }
 }

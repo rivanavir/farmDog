@@ -1,0 +1,14 @@
+.md-sidenav-left{
+
+}
+
+.main-layer{
+  md-backdrop{display: none;}
+  md-sidenav{
+    top: 40px;
+    .toggleButton{
+      position: absolute;
+      left: 100%;
+    }
+  }
+}
