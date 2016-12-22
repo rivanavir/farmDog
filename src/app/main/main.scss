@@ -32,6 +32,7 @@
       md-icon.material-icons{
         transition: .4s ease;
         font-size: 20px;
+        line-height: 1;
       }
     }
     &.md-closed{
@@ -94,5 +95,11 @@
         }
       }
     }
+  }
+  md-content.main-content{
+    height: 100vh;
+    margin-top: -40px;
+    padding-top: 40px;
+    overflow: auto;
   }
 }
