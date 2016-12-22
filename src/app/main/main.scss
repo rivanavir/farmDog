@@ -5,10 +5,94 @@
 .main-layer{
   md-backdrop{display: none;}
   md-sidenav{
+    width: 400px;
     top: 40px;
+    display: block;
+    overflow: visible;
+    // position: static;
     .toggleButton{
       position: absolute;
       left: 100%;
+      margin: 0;
+      width: 45px;
+    	height: 50px;
+      border-radius:0;
+      padding: 0;
+      min-width: 0;
+      line-height: 50px;
+      &:hover{
+        md-icon.material-icons{
+          transform: rotate(180deg);
+        }
+      }
+      &.md-button.md-primary.md-raised{
+        // line-height: 50px;
+        background-color: #1f7a44;
+      }
+      md-icon.material-icons{
+        transition: .4s ease;
+        font-size: 20px;
+      }
+    }
+    &.md-closed{
+      .toggleButton{
+        md-icon.material-icons{
+          transform: rotate(45deg);
+        }
+        &:hover{
+          md-icon.material-icons{
+            transform: rotate(225deg);
+          }
+        }
+      }
+    }
+    md-toolbar.md-theme-indigo {
+      background-color: #279755;
+      padding: 15px 25px 13px 25px;
+      h1{
+        font-size: 24px;
+	      font-weight: 300;
+        line-height: 1;
+        height: auto;
+        min-height: auto;
+        padding: 0;
+        margin-bottom: 12px;
+      }
+      p{
+        font-size: 16px;
+	      font-weight: 300;
+        line-height: 1;
+        margin: 0;
+      }
+      md-menu.sidenav-share{
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        margin-top: -18px;
+        button.md-button{
+          padding: 0 10px;
+          margin: 0;
+          min-width: 0;
+          line-height: 30px;
+          min-height: 30px
+        }
+        md-icon.material-icons{
+          font-size: 36px;
+        }
+      }
+    }
+    md-content{
+      padding: 19px 0;
+      box-sizing: border-box;
+      &>*{
+        margin: 0;
+        box-sizing: border-box;
+      }
+      md-list{
+        md-list-item {
+          padding: 0 25px;
+        }
+      }
     }
   }
 }
