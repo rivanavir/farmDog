@@ -56,7 +56,6 @@ a:hover, a:focus {
     border-radius:0;
     md-ripple-container{
       border-radius:0;
-
     }
   }
   .md-menu{
@@ -73,6 +72,7 @@ a:hover, a:focus {
       md-icon.material-icons{
         height: 12px;
         line-height: 12px;
+        margin-left: 8px;
       }
     }
   }
